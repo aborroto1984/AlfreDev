@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row nav">
+
+    <div class="col-9 ho-btn"><a class="home-button" href="#home">Alfredo Borroto</a></div>
+
+    <div class="col-3 ha-btn">
+        <button class="hamburger-button" (click)="toggleMobileMenu()"> <!-- Add a click event handler -->
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+  </div>
+
+</div>
+</div>
+
+<div class="container">
+
+          <ul class="menu" *ngIf="mobileMenuOpen">
+<!--      <ul class="menu">-->
+        <div class="col">
+          <div class="row"><a (click)="toggleMobileMenu()" class="option" href="#home">Home</a></div>
+        <div class="row"><a (click)="toggleMobileMenu()" class="option" href="#projects">Projects</a></div>
+        <div class="row"><a (click)="toggleMobileMenu()" class="option" href="#bio">About Me</a></div>
+        <div class="row"><a (click)="toggleMobileMenu()" class="option" href="#contact">Contact Me</a></div>
+        <!-- Add more menu items as needed -->
+        </div>
+      </ul>
+    </div>
+
+
