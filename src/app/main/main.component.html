@@ -1,35 +1,38 @@
-
 <header></header>
 <small-header></small-header>
 
 <div class="container" id="home">
 
   <div class="row">
-    <h1>Welcome to</h1>
+    <h1 class="welcomeTitle">Welcome to</h1>
   </div>
-<div class="row intro">
-<!--  <video class="videoIntro" id="videoIntro" autoplay playsinline>-->
-<!--    <source src="assets/introLogo.mp4" type="video/mp4">-->
-<!--    Your browser does not support the video tag.-->
-<!--  </video>-->
-  <img *ngIf="!isStatic" [@fade] class="gifImage" src="assets/logoIntro.gif" alt="GIF Image">
-  <img  class="staticImage" src="assets/fallBackImage.gif" alt="Fallback Image">
+  <div class="row intro">
+    <!--  <video class="videoIntro" id="videoIntro" autoplay playsinline>-->
+    <!--    <source src="assets/introLogo.mp4" type="video/mp4">-->
+    <!--    Your browser does not support the video tag.-->
+    <!--  </video>-->
+    <img *ngIf="!isStatic" class="gifImage" src="assets/logoIntro.gif" alt="GIF Image">
+    <img class="staticImage" src="assets/fallBackImage.gif" alt="Fallback Image">
 
-</div>
-<div class="row">
-  <p>I am a Junior Full Stack Software Engineer with a focus on front-end development and am interested in mobile or web
-    development. I am looking for an opportunity to help your company design the next app or website that will reach and
-    attract more users than ever before. I specialize in Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap, and
-    other programming languages like Python, C++, C#, Swift, and Java. I have been the principal UX/UI Designer and
-    Front-End Developer of two team projects in the last year. I will never stop learning and using everything I know
-    and learn to help your company thrive.</p>
-</div>
-
-
-
+  </div>
+  <div class="row">
+    <p>My name is Alfredo Borroto. I am a Junior Full Stack Software Engineer with a focus on front-end development for mobil, app or web.
+      I am looking for an opportunity to help your company design the next app or website that will reach and
+      attract more users than ever before. I specialize in Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap, and
+      other programming languages like Python, C++, C#, Swift, and Java. I have been the principal UX/UI Designer and
+      Front-End Developer of two team projects in the last year. You can be sure I will never stop learning and using
+      everything I know and learn to help your company thrive.</p>
+  </div>
 </div>
 
 
-<div class="container d-flex justify-content-center align-items-center" id="projects">projects</div>
+<div class="container d-flex justify-content-center align-items-center" id="projects">
+  <div class="row">
+    <h1 id="test" class="revealUp" [@fadeIn]>Projects</h1>
+  </div>
+</div>
+
+
+
 <div class="container d-flex justify-content-center align-items-center" id="bio">bio</div>
 <div class="container d-flex justify-content-center align-items-center" id="contact">contact</div>
