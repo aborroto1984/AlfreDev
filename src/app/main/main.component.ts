@@ -10,17 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(20px)' }),
+        style({ opacity: 0, transform: 'translateY(50px)' }),
         animate('500ms', style({ opacity: 1, transform: 'translateY(0)' })),
       ]),
     ]),
   ],
 })
 export class MainComponent implements OnInit{
-  // @ts-ignore
-  @ViewChild('h1') allTitles: ElementRef;
   isStatic = false
-  elementVisible = false;
+  projectsVisible = false;
   constructor(private el: ElementRef) {}
   ngOnInit() {
     // Create a timer that emits a value after 10 seconds
@@ -33,20 +31,11 @@ export class MainComponent implements OnInit{
     });
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    if (!this.elementVisible) {
-      const element = this.el.nativeElement.querySelector('test');
-      const rect = element.getBoundingClientRect();
-
-      if (rect.top <= window.innerHeight - 100) {
-        this.elementVisible = true;
-        // Apply the animation class when the element is visible
-        element.classList.add('animate-fade-in');
-      }
-      else{
-        this.elementVisible = false;
-      }
-    }
+  projectIsVisible(){
+    this.projectsVisible = true
   }
+  projectIsNotVisible(){
+    this.projectsVisible = false
+  }
+
 }

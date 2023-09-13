@@ -45,42 +45,43 @@ small-header {
   }
 }
 
-.intro{
+.intro {
   display: flex;
   justify-content: center;
 
 }
 
-img.gifImage{
+img.gifImage {
   position: absolute;
   z-index: 4;
 }
-img.staticImage{
+
+img.staticImage {
   z-index: 2;
 }
 
-/* For smaller screens */
+//For smaller screens-------------------------------------------------------
 @media screen and (max-width: 699px) {
   img {
     width: 100%;
   }
-  header{
-    display:none;
+  header {
+    display: none;
   }
-  small-header{
+  small-header {
     display: block;
   }
 }
 
-/* For larger screens */
+//For larger screens--------------------------------------------------------
 @media screen and (min-width: 700px) {
   img {
     width: 70%;
   }
-  header{
-    display:block;
+  header {
+    display: block;
   }
-  small-header{
+  small-header {
     display: none;
   }
 }
@@ -103,6 +104,192 @@ h1 {
 }
 
 
-.projectsTitle{
+.projectsTitle {
   display: flex;
+}
+
+h1 {
+
+  background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #163a08,
+      transparent
+  );
+
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #58be2e,
+  -0.2rem 0.1rem 1rem #4c8039, 0.2rem 0.1rem 1rem #42772f,
+  0 -0.5rem 2rem #1a4d07, 0 0.5rem 3rem #1a4d07;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+//Blinking animation ---------------------------------------------------------
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #58be2e,
+    -0.2rem 0.1rem 1rem #4c8039, 0.2rem 0.1rem 1rem #4c8039,
+    0 -0.5rem 2rem #1a4d07, 0 0.5rem 3rem #1a4d07;
+  }
+  28%,
+  33% {
+    color: #42772f;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #4c8039;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 1s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #163a08;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #58be2e,
+    -0.2rem 0.1rem 1rem #42772f, 0.2rem 0.1rem 1rem #42772f,
+    0 -0.5rem 2rem #1a4d07, 0 0.5rem 3rem #1a4d07;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
