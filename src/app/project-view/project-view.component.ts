@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProjectViewComponent {
 name = 'Perfect Cut Calculator';
-imagePath = 'assets/PerfectCut.png';
+imagePath = '';
 videoPath = '';
 codePath = '';
 exePath = ''
