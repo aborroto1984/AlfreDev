@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <header></header>
 <small-header></small-header>
 
@@ -28,7 +29,10 @@
 
 <div class="container d-flex justify-content-center align-items-center" id="projects">
   <div class="row" appIntersectionObserver (elementVisible)="projectIsVisible()" (elementNotVisible)="projectIsNotVisible()">
-    <h1 [@fadeIn] *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span class="flicker">je</span>cts</h1>
+    <h1 [@fadeIn]="" *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span class="flicker">je</span>cts</h1>
+
+
+
   </div>
 </div>
 

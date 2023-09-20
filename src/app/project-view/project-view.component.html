@@ -1,8 +1,9 @@
+<!--suppress ALL -->
 <div class="container">
   <div class="row d-flex justify-content-center">
 
-    <div class="col-xxl-4   col-md-6">
-      <div class="row panel">
+    <div class="col-xxl-4 col-md-6">
+      <div (click)="openPanels()" class="row panel mainPanel">
 <!--        <div class="row">-->
           <h2>{{name}}</h2>
 <!--        </div>-->
@@ -11,11 +12,12 @@
       </div>
     </div>
 
-    <div class="col-xxl-4   col-md-6 panel">
+    <div *ngIf="isOpen" [@fadeIn]="" class="col-xxl-4 col-md-6 panel animate-fade-in">
       <p>{{description}}</p>
     </div>
 
-    <div class="col-xxl-4   col-md-7 panel">
+
+    <div *ngIf="isOpen" [@fadeIn]="" class="col-xxl-4 col-md-7 panel animate-fade-in" >
       <div class="row">
         <div class="col">
           <div class="row"><a [href]="videoPath">Video Demo</a></div>
@@ -23,6 +25,7 @@
           <div class="row"><a [href]="exePath">Download</a></div>
         </div>
       </div>
+
 
     </div>
   </div>

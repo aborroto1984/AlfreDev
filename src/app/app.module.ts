@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SmallHeaderComponent } from './small-header/small-header.component';
 import { IntersectionObserverDirective } from './intersection-observer-directive.directive';
 import { ProjectViewComponent } from './project-view/project-view.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjectViewComponent } from './project-view/project-view.component';
     MainComponent,
     SmallHeaderComponent,
     IntersectionObserverDirective,
-    ProjectViewComponent
+    ProjectViewComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
