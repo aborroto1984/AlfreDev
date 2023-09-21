@@ -5,12 +5,13 @@
     <div class="col-xxl-4 col-md-6">
       <div (click)="openPanels()" class="row panel mainPanel">
 <!--        <div class="row">-->
-          <h2>{{name}}</h2>
+          <h1>{{name}}</h1>
 <!--        </div>-->
         <div class="col imgContainer"><img [src]="imagePath" alt="">
         </div>
       </div>
     </div>
+
 
     <div *ngIf="isOpen" [@fadeIn]="" class="col-xxl-4 col-md-6 panel animate-fade-in">
       <p>{{description}}</p>

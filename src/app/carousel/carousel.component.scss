@@ -1,0 +1,22 @@
+
+
+.carousel-indicators {
+  position: relative;
+  margin-top: 3%;
+}
+
+//For smaller screens-------------------------------------------------------
+@media screen and (max-width: 699px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
+
+//For larger screens--------------------------------------------------------
+@media screen and (min-width: 700px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+}

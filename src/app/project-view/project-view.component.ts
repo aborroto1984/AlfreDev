@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {animate, style, transition, trigger} from "@angular/animations";
+import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'project-view',
@@ -14,7 +14,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
         animate('500ms', style({ opacity: 0, transform: 'translateX(50px)' })),
       ]),
     ]),
-  ],
+  ]
 })
 export class ProjectViewComponent {
 name = 'Black Jack';
