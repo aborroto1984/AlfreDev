@@ -7,30 +7,34 @@
 //}
 
 img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
+  //max-width: 100%;
+  //max-height: 100%;
+  //height: auto;
+  height: 700px;
+  width: 600px;
+  object-fit: contain;
   display: block;
+  border: red 1px solid;
   -webkit-filter: drop-shadow(0 0 10px chartreuse)
 }
 
-h1{
+h1 {
   //font-size: xxx-large;
   color: white;
 }
 
-.panel{
+.panel {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
-.mainPanel{
+.mainPanel {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
   color: chartreuse;
   border: chartreuse 1px solid;
@@ -38,11 +42,11 @@ a{
   height: fit-content;
   font-size: x-large;
   padding: 10px 20px 10px 20px;
-  margin:5% auto 5% auto;
+  margin: 5% auto 5% auto;
 }
 
 
-p{
+p {
   color: white;
   margin: 10%;
   font-size: larger;

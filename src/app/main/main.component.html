@@ -17,7 +17,8 @@
 
   </div>
   <div class="row">
-    <p>My name is Alfredo Borroto. I am a Junior Full Stack Software Engineer with a focus on front-end development for mobil, app or web.
+    <p>My name is Alfredo Borroto. I am a Junior Full Stack Software Engineer with a focus on front-end development for
+      mobil, app or web.
       I am looking for an opportunity to help your company design the next app or website that will reach and
       attract more users than ever before. I specialize in Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap, and
       other programming languages like Python, C++, C#, Swift, and Java. I have been the principal UX/UI Designer and
@@ -28,14 +29,18 @@
 
 
 <div class="container d-flex justify-content-center align-items-center" id="projects">
-  <div class="row" appIntersectionObserver (elementVisible)="projectIsVisible()" (elementNotVisible)="projectIsNotVisible()">
-    <h1 [@fadeIn]="" *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span class="flicker">je</span>cts</h1>
-
-
+  <div class="row carouselContainer" appIntersectionObserver (elementVisible)="projectIsVisible()"
+       (elementNotVisible)="projectIsNotVisible()">
+    <div class="row">
+      <h1 [@fadeIn]="" *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span
+        class="flicker">je</span>cts</h1>
+    </div>
+    <div class="row">
+      <carousel [projects]="projects"></carousel>
+    </div>
 
   </div>
 </div>
-
 
 
 <div class="container d-flex justify-content-center align-items-center" id="bio">bio</div>

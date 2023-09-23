@@ -104,9 +104,9 @@ h1 {
 }
 
 
-.projectsTitle {
-  display: flex;
-}
+//.projectsTitle {
+//  display: flex;
+//}
 
 h1 {
 
@@ -293,3 +293,8 @@ h1 {
     opacity: 1;
   }
 }
+ .carouselContainer{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }

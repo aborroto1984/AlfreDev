@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-
+import {Component, Input} from '@angular/core';
+import { ProjectInterface} from "../main-interface";
 
 @Component({
   selector: 'carousel',
@@ -7,5 +7,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-
+@Input() projects: ProjectInterface[] = [];
 }

@@ -3,14 +3,15 @@
     <div class="col-12">
       <div id="carousel" class="carousel slide" data-bs-interval="false">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <project-view></project-view>
-          </div>
-          <div class="carousel-item">
-            <project-view></project-view>
-          </div>
-          <div class="carousel-item">
-            <project-view></project-view>
+          <div *ngFor="let project of projects; let first = first" [ngClass]="{'active':first}" class="carousel-item">
+            <project-view
+            [name]="project.name"
+            [imagePath]="project.imgPath"
+            [description]="project.description"
+            [videoPath]="project.videoPath"
+            [githubPath]="project.githubPath"
+            [downLoadPath]="project.downLoadPath">
+            </project-view>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -26,6 +27,7 @@
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
       </div>
     </div>
