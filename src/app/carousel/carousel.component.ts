@@ -8,4 +8,6 @@ import { ProjectInterface} from "../main-interface";
 })
 export class CarouselComponent {
 @Input() projects: ProjectInterface[] = [];
+
+
 }
