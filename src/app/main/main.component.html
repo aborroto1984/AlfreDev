@@ -28,15 +28,18 @@
 </div>
 
 
-<div class="container d-flex justify-content-center align-items-center" id="projects">
-  <div class="row carouselContainer" appIntersectionObserver (elementVisible)="projectIsVisible()"
-       (elementNotVisible)="projectIsNotVisible()">
-    <div class="row">
-      <h1 [@fadeIn]="" *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span
-        class="flicker">je</span>cts</h1>
-    </div>
-    <div class="row">
-      <carousel [projects]="projects"></carousel>
+<div class="container" id="projects">
+
+  <div class="row">
+    <div class="col">
+      <div class="row " appIntersectionObserver (elementVisible)="projectIsVisible()"
+           (elementNotVisible)="projectIsNotVisible()">`
+        <h1 [@fadeIn]="" *ngIf="projectsVisible" id="test" class="revealUp"><span class="fast-flicker">P</span>ro<span
+          class="flicker">je</span>cts</h1>
+      </div>
+      <div class="row">
+        <carousel [projects]="projects"></carousel>
+      </div>
     </div>
 
   </div>
@@ -45,3 +48,4 @@
 
 <div class="container d-flex justify-content-center align-items-center" id="bio">bio</div>
 <div class="container d-flex justify-content-center align-items-center" id="contact">contact</div>
+<!--<carousel [projects]="projects"></carousel>-->

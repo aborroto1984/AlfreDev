@@ -27,7 +27,7 @@ export class MainComponent implements OnInit{
     downLoadPath: ''
     },
     {name: 'Calc+',
-      imgPath: 'assets/Calc +-topaz.png',
+      imgPath: 'assets/Calc+.png',
       description: 'Calc+ is a fractions calculator built for IOS. I designed this calculator to fill a gap between a standard and a scientific calculator. The app was written in Xcode using the SwiftUI toolkit. I made the prototype using Adobe Xd. The app has a dark mode and a very easy-to-use interface.',
       videoPath: 'https://www.youtube.com/watch?v=vFBBwGt6lcw',
       githubPath: 'https://github.com/aborroto1984/Calc-Final',
